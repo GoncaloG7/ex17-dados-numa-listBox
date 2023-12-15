@@ -39,6 +39,8 @@
             btnSeguinte = new Button();
             btnGuardar = new Button();
             btnFechar = new Button();
+            pcPerfil = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pcPerfil).BeginInit();
             SuspendLayout();
             // 
             // cbShow
@@ -83,16 +85,15 @@
             lbSessao.AutoSize = true;
             lbSessao.Location = new Point(108, 220);
             lbSessao.Name = "lbSessao";
-            lbSessao.Size = new Size(127, 15);
+            lbSessao.Size = new Size(106, 15);
             lbSessao.TabIndex = 14;
-            lbSessao.Text = "Ja tem sessão iniciada?";
+            lbSessao.Text = "Ja tem uma conta?";
             lbSessao.Click += lbSessao_Click;
             // 
             // txtPass
             // 
             txtPass.Location = new Point(75, 173);
             txtPass.Name = "txtPass";
-            txtPass.PasswordChar = '*';
             txtPass.Size = new Size(100, 23);
             txtPass.TabIndex = 13;
             txtPass.UseSystemPasswordChar = true;
@@ -117,7 +118,7 @@
             btnSeguinte.Name = "btnSeguinte";
             btnSeguinte.Size = new Size(75, 23);
             btnSeguinte.TabIndex = 23;
-            btnSeguinte.Text = "Seguinte";
+            btnSeguinte.Text = "Lista";
             btnSeguinte.UseVisualStyleBackColor = true;
             btnSeguinte.Click += btnSeguinte_Click;
             // 
@@ -137,15 +138,27 @@
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(35, 24);
             btnFechar.TabIndex = 24;
-            btnFechar.Text = "X";
+            btnFechar.Text = "❌";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
+            // 
+            // pcPerfil
+            // 
+            pcPerfil.Image = Properties.Resources.image_removebg_preview__13_;
+            pcPerfil.Location = new Point(1, 0);
+            pcPerfil.Name = "pcPerfil";
+            pcPerfil.Size = new Size(43, 48);
+            pcPerfil.SizeMode = PictureBoxSizeMode.Zoom;
+            pcPerfil.TabIndex = 25;
+            pcPerfil.TabStop = false;
+            pcPerfil.Click += pcPerfil_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(314, 305);
+            Controls.Add(pcPerfil);
             Controls.Add(btnFechar);
             Controls.Add(btnSeguinte);
             Controls.Add(btnGuardar);
@@ -158,7 +171,8 @@
             Controls.Add(txtEmail);
             Controls.Add(txtNome);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Criar Conta";
+            ((System.ComponentModel.ISupportInitialize)pcPerfil).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -176,5 +190,6 @@
         private Button btnSeguinte;
         private Button btnGuardar;
         private Button btnFechar;
+        private PictureBox pcPerfil;
     }
 }

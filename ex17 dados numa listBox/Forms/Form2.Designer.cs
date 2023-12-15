@@ -45,7 +45,7 @@
             btnFechar.Name = "btnFechar";
             btnFechar.Size = new Size(35, 24);
             btnFechar.TabIndex = 25;
-            btnFechar.Text = "X";
+            btnFechar.Text = "❌";
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
@@ -134,7 +134,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Iniciar sessão";
             ResumeLayout(false);
             PerformLayout();
         }
