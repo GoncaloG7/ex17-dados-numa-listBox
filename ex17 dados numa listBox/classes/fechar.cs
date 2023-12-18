@@ -22,19 +22,5 @@ namespace ex17_dados_numa_listBox.classes
             form1.Show();
             thisvar.Hide();
         }
-
-        public static void voltarForm2(Form thisvar)
-        {
-            Form2 form2 = new Form2();
-            form2.Show();
-            thisvar.Hide();
-        }
-
-        public static void abrirForm3(Form thisvar)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-            thisvar.Hide();
-        }
     }
 }

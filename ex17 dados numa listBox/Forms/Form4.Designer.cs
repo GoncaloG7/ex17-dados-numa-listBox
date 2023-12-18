@@ -66,11 +66,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(160, 312);
+            button1.Location = new Point(133, 312);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(130, 23);
             button1.TabIndex = 28;
-            button1.Text = "button1";
+            button1.Text = "Mostrar Utilizadores";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 

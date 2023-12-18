@@ -10,7 +10,7 @@ namespace ex17_dados_numa_listBox.classes
 {
     public class dados
     {
-        public  string nome;
+        public string nome;
         public string email;
         public string pass;
 
@@ -20,9 +20,10 @@ namespace ex17_dados_numa_listBox.classes
             email = Email;
             pass = Password;
         }
+
         public static List<dados> listaUtilizadores = new List<dados>();
        
-        public void Registar(string nome, string email, string password)
+        public static void Registar(string nome, string email, string password)
         {
             dados novoUtilizador = new dados(nome, email, password);
             listaUtilizadores.Add(novoUtilizador);

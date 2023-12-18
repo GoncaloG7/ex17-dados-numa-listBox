@@ -39,7 +39,11 @@ namespace ex17_dados_numa_listBox.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach( )
+            contas.Items.Clear();
+            foreach(dados utilizador in dados.listaUtilizadores)
+            {
+                contas.Items.Add(utilizador.nome);
+            }
         }
     }
 }

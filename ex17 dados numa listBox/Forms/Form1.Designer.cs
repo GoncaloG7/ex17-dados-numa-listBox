@@ -32,15 +32,12 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            lbSessao = new Label();
             txtPass = new TextBox();
             txtEmail = new TextBox();
             txtNome = new TextBox();
             btnSeguinte = new Button();
             btnGuardar = new Button();
             btnFechar = new Button();
-            pcPerfil = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pcPerfil).BeginInit();
             SuspendLayout();
             // 
             // cbShow
@@ -79,16 +76,6 @@
             label2.Size = new Size(40, 15);
             label2.TabIndex = 15;
             label2.Text = "Nome";
-            // 
-            // lbSessao
-            // 
-            lbSessao.AutoSize = true;
-            lbSessao.Location = new Point(108, 220);
-            lbSessao.Name = "lbSessao";
-            lbSessao.Size = new Size(106, 15);
-            lbSessao.TabIndex = 14;
-            lbSessao.Text = "Ja tem uma conta?";
-            lbSessao.Click += lbSessao_Click;
             // 
             // txtPass
             // 
@@ -142,23 +129,11 @@
             btnFechar.UseVisualStyleBackColor = true;
             btnFechar.Click += btnFechar_Click;
             // 
-            // pcPerfil
-            // 
-            pcPerfil.Image = Properties.Resources.image_removebg_preview__13_;
-            pcPerfil.Location = new Point(1, 0);
-            pcPerfil.Name = "pcPerfil";
-            pcPerfil.Size = new Size(43, 48);
-            pcPerfil.SizeMode = PictureBoxSizeMode.Zoom;
-            pcPerfil.TabIndex = 25;
-            pcPerfil.TabStop = false;
-            pcPerfil.Click += pcPerfil_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(314, 305);
-            Controls.Add(pcPerfil);
             Controls.Add(btnFechar);
             Controls.Add(btnSeguinte);
             Controls.Add(btnGuardar);
@@ -166,13 +141,11 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(lbSessao);
             Controls.Add(txtPass);
             Controls.Add(txtEmail);
             Controls.Add(txtNome);
             Name = "Form1";
             Text = "Criar Conta";
-            ((System.ComponentModel.ISupportInitialize)pcPerfil).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,13 +156,11 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private Label lbSessao;
         private TextBox txtPass;
         private TextBox txtEmail;
         private TextBox txtNome;
         private Button btnSeguinte;
         private Button btnGuardar;
         private Button btnFechar;
-        private PictureBox pcPerfil;
     }
 }
